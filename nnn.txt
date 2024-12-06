@@ -1,0 +1,49 @@
+data frame is a 2 dimensial labeled data stucture
+create a data frame pd.DataFrame({'Name':['sam','Julia'],'marks':[...]
+head() : first five records
+tail():last five records
+shape():(numberofrows, numofColumn
+desicribe():
+loc[0:3,("nameOfColumn,...")]:exract rows from 0 to 3 and comumlnname 
+iloc[0:3,0:5]:exract rows from 0 to 3 and comumlnform 0 to 5
+dropping culomuns :iris.drop('columnname',axis=1)
+dropping rows :iris.drop([1,2,3],axis=0)
+matplotlib used for data visualization (create plots histogram..Etc)
+import puplot sumodul from the matplotlib module : from matplotlib import pyplot as plt
+plt.plot(x,y,color='r',linewidth=2,linestyle=":"): make a line plot linestyle [-. | : -]
+tow lins in the same plot :
+plt.plot(x,y2,color='r',linewidth=2,linestyle=":")
+plt.plot(x,y1,color='r',linewidth=2,linestyle=":")
+plt.show()
+plt.title("line plot")
+plt.xlabel('x-label')
+plt.ylabel('y-label')
+plt.grid(True):afficher une grille sur le graphique. Cette grille aide à mieux visualiser les données en fournissant des repères horizontaux et verticaux qui correspondent aux valeurs des axes.
+create subplot 
+
+plt.supplot(rowindex,colindex,countnumbofthissubplot)
+plt.plot(x,y1,color='r',linewidth=2,linestyle=":")
+bar plot :help us to undestand the destribution of catagarical cilumns
+student ={'sam':23,'mat':29}
+names=list(student.keys())
+val=list(student.values())
+plt.bar(names,val,color='g')
+plt.show()
+horizantal bar plot :plt.barh(names,val)
+creating a nasicscatter-plot x=[10,...] a=[7,...]
+plt.scatter(x,a,marker='*';c='orange',s=200):diagram de point  prmier point avec index(10,7)
+fro making sublot is the same as bar plot
+univesial plot
+different btw barplot and histograme the last one is used to understand the distucution of numerical or continous colomuns 
+crealt histogram from lsite : plt.hist(lista)
+creat histogram for a  particular dataframe :plt.hist(data[name of culmn],color='orange,bins=20') bins realted to  distubution
+boxplot is normally sused t ounderstand th distubution numerical col and catiragicol columns 
+one = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+two = [1, 2, 3, 4, 5, 4, 3, 2, 1]
+three = [6, 7, 8, 9, 8, 7, 6, 5, 4]
+data = list([one, two, three])
+plt.boxplot(data)
+:each list will be a box diagramme
+vilon plot : plt.vilonplot(data,showmedians=True)
+
+
